@@ -1,0 +1,6 @@
+{
+  "name": "ZERUM",
+  "description": "ZERUM - Libertad Financiera Inteligente & Multiusuario. Dashboard para la gestión de deudas, gastos e ingresos con proyección de libertad financiera.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,160 @@
+{
+  "designSystemName": "Soft Clean Dashboard System",
+  "version": "1.0.0",
+  "meta": {
+    "description": "Tokens and structural patterns for replicating a bright, modern, SaaS/Calendar dashboard style using high-contrast primary accents, soft pastel category highlights, and pronounced card-based elevation."
+  },
+  "colorPalette": {
+    "canvas": {
+      "backgroundOuter": "#F3F5F9",
+      "backgroundInner": "#FFFFFF"
+    },
+    "brand": {
+      "primary": "#3B52F6",
+      "primaryHover": "#2540E4",
+      "primaryContrast": "#FFFFFF"
+    },
+    "text": {
+      "heading": "#111827",
+      "body": "#374151",
+      "muted": "#9CA3AF"
+    },
+    "accents": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "danger": "#EF4444",
+      "info": "#06B6D4"
+    },
+    "pastels": {
+      "blueTint": "#E0E7FF",
+      "purpleTint": "#EDE9FE",
+      "greenTint": "#D1FAE5",
+      "redTint": "#FEE2E2",
+      "cyanTint": "#E0F2FE",
+      "yellowTint": "#FEF3C7"
+    }
+  },
+  "typography": {
+    "fontFamily": "Inter, system-ui, sans-serif",
+    "weights": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "hierarchy": {
+      "pageTitle": {
+        "size": "24px",
+        "weight": "700",
+        "color": "text.heading"
+      },
+      "sectionHeader": {
+        "size": "18px",
+        "weight": "600",
+        "color": "text.heading"
+      },
+      "bodyText": {
+        "size": "14px",
+        "weight": "400",
+        "color": "text.body"
+      },
+      "caption": {
+        "size": "12px",
+        "weight": "500",
+        "color": "text.muted"
+      }
+    }
+  },
+  "layout": {
+    "container": {
+      "borderRadius": "24px",
+      "padding": "24px",
+      "shadow": "0 20px 25px -5px rgba(0, 0, 0, 0.03), 0 10px 10px -5px rgba(0, 0, 0, 0.02)"
+    },
+    "sidebar": {
+      "width": "260px",
+      "borderRight": "1px solid #E5E7EB"
+    },
+    "gridGap": "20px"
+  },
+  "components": {
+    "cards": {
+      "default": {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": "16px",
+        "padding": "20px",
+        "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01)",
+        "border": "none"
+      },
+      "interactive": {
+        "hoverEffect": "transform: translateY(-2px); transition: all 0.2s ease;"
+      }
+    },
+    "buttons": {
+      "primary": {
+        "backgroundColor": "brand.primary",
+        "textColor": "brand.primaryContrast",
+        "borderRadius": "12px",
+        "padding": "12px 24px",
+        "fontWeight": "600"
+      },
+      "secondary": {
+        "backgroundColor": "#FFFFFF",
+        "textColor": "text.body",
+        "border": "1px solid #E5E7EB",
+        "borderRadius": "12px",
+        "padding": "10px 20px"
+      }
+    },
+    "dataBlocks": {
+      "metricCard": {
+        "borderRadius": "14px",
+        "padding": "16px",
+        "layout": "row-centered"
+      },
+      "timelineEvent": {
+        "borderRadius": "8px",
+        "borderLeftWidth": "4px",
+        "padding": "8px 12px",
+        "opacity": 0.85
+      }
+    },
+    "navigation": {
+      "navItem": {
+        "padding": "12px 16px",
+        "borderRadius": "10px",
+        "states": {
+          "active": {
+            "backgroundColor": "pastels.blueTint",
+            "textColor": "brand.primary",
+            "fontWeight": "600"
+          },
+          "inactive": {
+            "backgroundColor": "transparent",
+            "textColor": "text.muted"
+          }
+        }
+      }
+    }
+  },
+  "uiPatterns": {
+    "calendarGrid": {
+      "borderColor": "#F3F4F6",
+      "headerAlignment": "center",
+      "todayIndicator": {
+        "backgroundColor": "brand.primary",
+        "textColor": "#FFFFFF",
+        "shape": "circle"
+      }
+    },
+    "decorativeElements": {
+      "dotMatrix": {
+        "color": "#E5E7EB",
+        "pattern": "8x8 grid of subtle circles used near extreme borders as depth accents"
+      },
+      "illustrations": {
+        "style": "Flat, 2D vector style matching brand colors with high-contrast character outlines"
+      }
+    }
+  }
+}

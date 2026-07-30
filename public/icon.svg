@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="128" fill="#0B132B"/>
+  <defs>
+    <linearGradient id="iconGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="40%" stop-color="#0284C7" />
+      <stop offset="80%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#00D084" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(36, 96) scale(1.05)">
+    <!-- Circular Labyrinth / Maze Base -->
+    <g stroke="#3B82F6" stroke-width="7" stroke-linecap="round" fill="none">
+      <circle cx="110" cy="180" r="66" stroke-width="7" />
+      <path d="M 110 128 A 52 52 0 1 1 58 180" stroke-width="6.5" />
+      <path d="M 84 180 A 26 26 0 0 1 110 154" stroke-width="6" />
+      <circle cx="110" cy="180" r="36" stroke-dasharray="75 22" stroke-width="5.5" />
+      <circle cx="110" cy="180" r="21" stroke-width="5" />
+      <circle cx="110" cy="180" r="8" fill="#3B82F6" stroke="none" />
+    </g>
+
+    <!-- Winged Arrow & Graceful Swoosh -->
+    <path d="M 138 132 C 185 95, 215 200, 260 155 C 282 132, 275 80, 325 48 L 350 92 C 310 88, 302 115, 288 138 C 255 188, 220 135, 162 200 Z" fill="url(#iconGrad2)" />
+    <path d="M 200 180 Q 250 125, 335 48 L 312 38 L 380 15 L 350 82 L 330 58 Q 242 128, 190 185 Z" fill="url(#iconGrad2)" />
+    <path d="M 238 90 C 224 54, 248 26, 280 44 C 258 58, 258 76, 271 80 C 253 85, 248 98, 257 107 C 243 103, 234 96, 238 90 Z" fill="url(#iconGrad2)" />
+    <path d="M 295 160 C 322 178, 358 168, 367 142 C 349 155, 327 150, 318 137 C 331 132, 344 119, 327 115 C 313 120, 300 133, 295 160 Z" fill="url(#iconGrad2)" />
+  </g>
+</svg>

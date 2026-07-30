@@ -1,0 +1,26 @@
+{
+  "entities": {
+    "usuarios": {
+      "title": "Usuarios",
+      "description": "Perfiles de usuarios individuales en Zerum",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "nombre": { "type": "string" },
+        "correo": { "type": "string" },
+        "foto": { "type": "string" },
+        "rol": { "type": "string" },
+        "pais": { "type": "string" },
+        "moneda": { "type": "string" },
+        "tipoIngreso": { "type": "string" },
+        "frecuenciaIngreso": { "type": "string" },
+        "ingresoPromedio": { "type": "number" },
+        "objetivoPrincipal": { "type": "string" },
+        "fechaRegistro": { "type": "string" },
+        "ultimaConexion": { "type": "string" },
+        "onboardingCompletado": { "type": "boolean" }
+      },
+      "required": ["uid", "nombre", "correo", "rol", "fechaRegistro"]
+    }
+  }
+}

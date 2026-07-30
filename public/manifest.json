@@ -1,0 +1,32 @@
+{
+  "id": "/",
+  "short_name": "Camino Cero",
+  "name": "Camino Cero - Libertad Financiera y Control de Deudas",
+  "description": "Aplicación financiera inteligente con sincronización en nube para control de deudas, estrategias Avalancha y Bola de Nieve, y gestión quincenal.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#f8fafc",
+  "theme_color": "#10b981",
+  "display": "standalone",
+  "orientation": "portrait"
+}

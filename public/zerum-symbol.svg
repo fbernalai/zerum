@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 220" fill="none">
+  <defs>
+    <linearGradient id="zerumWingGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="30%" stop-color="#0284C7" />
+      <stop offset="70%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+  </defs>
+
+  <!-- Labyrinth / Circular Maze on the Left -->
+  <g stroke="#2563EB" stroke-width="5.5" stroke-linecap="round" fill="none">
+    <!-- Outer Ring -->
+    <circle cx="85" cy="110" r="54" />
+    <!-- 2nd Ring with gap -->
+    <path d="M 85 68 A 42 42 0 1 1 43 110" stroke-width="5" />
+    <!-- 3rd Ring with gap -->
+    <path d="M 61 110 A 24 24 0 0 1 85 86" stroke-width="4.5" />
+    <path d="M 85 134 A 24 24 0 0 1 61 110" stroke-width="4.5" />
+    <!-- Inner Rings -->
+    <circle cx="85" cy="110" r="15" stroke-width="4" />
+    <!-- Center Eye / Dot -->
+    <circle cx="85" cy="110" r="6" fill="#2563EB" stroke="none" />
+  </g>
+
+  <!-- Intertwined Winged Arrow Ribbon (Rising up to the right) -->
+  <!-- Primary Ascending Winged Arrow -->
+  <path d="M 100 110 C 130 85, 150 145, 185 125 C 210 110, 205 75, 245 45 L 265 82 C 235 80, 228 100, 215 118 C 188 155, 160 115, 120 160 Z" fill="url(#zerumWingGrad)" />
+  
+  <!-- Arrow Head & Shaft -->
+  <path d="M 155 145 C 195 105, 245 55, 282 20 L 260 12 L 320 10 L 298 70 L 278 48 C 242 82, 190 132, 150 152 Z" fill="url(#zerumWingGrad)" />
+  
+  <!-- Top Feather / Wing Accent -->
+  <path d="M 210 75 C 198 46, 218 22, 245 38 C 226 50, 226 64, 238 68 C 222 72, 218 84, 226 91 C 214 88, 206 82, 210 75 Z" fill="url(#zerumWingGrad)" opacity="0.9" />
+  
+  <!-- Lower Wing Feather -->
+  <path d="M 250 130 C 272 145, 302 136, 310 114 C 294 125, 276 121, 268 110 C 280 106, 290 95, 276 92 C 264 96, 254 107, 250 130 Z" fill="url(#zerumWingGrad)" opacity="0.85" />
+</svg>
