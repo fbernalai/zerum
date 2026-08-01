@@ -29,24 +29,27 @@ import {
 } from 'firebase/firestore';
 import { UserProfileDoc, OnboardingAnswers } from '../types';
 
-import firebaseConfigJson from '../../firebase-applet-config.json';
 
 // Configuration from environment variables or applet config
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || firebaseConfigJson.apiKey || "AIzaSyChW7llfz23jthIcZLRi-51f4XpTh8T_bk",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || firebaseConfigJson.authDomain || "prismatic-aspect-zt3g1.firebaseapp.com",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || firebaseConfigJson.projectId || "prismatic-aspect-zt3g1",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || firebaseConfigJson.storageBucket || "prismatic-aspect-zt3g1.firebasestorage.app",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || firebaseConfigJson.messagingSenderId || "589970767990",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || firebaseConfigJson.appId || "1:589970767990:web:175f53c3f806c5b34adf57"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-const databaseId = import.meta.env.VITE_FIREBASE_DATABASE_ID || firebaseConfigJson.firestoreDatabaseId || "ai-studio-caminoacero-9acd8276-4d05-4d86-a538-329954e08e1c";
+export const hasFirebase = Boolean(firebaseConfig.apiKey && firebaseConfig.projectId);
+if (!hasFirebase) {
+  console.error('[ZERUM] Faltan variables VITE_FIREBASE_* — corriendo solo en local.');
+}
 
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
 export const auth = getAuth(app);
+
+const databaseId = import.meta.env.VITE_FIREBASE_DATABASE_ID;
 export const db = databaseId ? getFirestore(app, databaseId) : getFirestore(app);
-export const hasFirebase = true;
 
 // ----------------------------------------------------
 // FIREBASE AUTHENTICATION SERVICES
